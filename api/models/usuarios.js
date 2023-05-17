@@ -10,7 +10,18 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      // fazendo associação entre usuarios, roles e permissoes
+      //Parametros: tabela que recebe relacionamento, referencia da tabela pivo
+      usuarios.belongsToMany(models.roles, {
+        through: models.usuarios_roles,
+        as: 'usuario_roles',
+        foreignKey: 'usuario_id'
+      })
+      usuarios.belongsToMany(models.permissoes, {
+        through: models.usuarios_permissoes,
+        as: 'usuario_permissoes',
+        foreignKey: 'usuario_id'
+      })
     }
   }
   usuarios.init({

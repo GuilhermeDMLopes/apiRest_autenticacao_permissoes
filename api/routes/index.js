@@ -5,6 +5,11 @@ const produto = require('./produtoRoute.js')
 const usuario = require('./usuariosRoute.js')
 //importando rota de autenticação. ELe sempre deve ser o primeiro
 const auth = require('./authRoute.js')
+//importando rotas de roles
+const role = require('./role.js')
+//importando rotas de permissoes
+const permissao = require('./permissaoRoute.js')
+
 
 module.exports = app => {
   app.use(
@@ -12,5 +17,7 @@ module.exports = app => {
     auth,
     produto,
     usuario,
+    role,
+    permissao
   )
 }
