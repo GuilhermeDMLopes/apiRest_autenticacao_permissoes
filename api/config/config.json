@@ -1,0 +1,24 @@
+{
+  "development": {
+    "username": "guilherme",
+    "password": "guilherme123",
+    "database": "seguranca_nodejs_development",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorAliases": false
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "seguranca_nodejs_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "seguranca_nodejs_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
