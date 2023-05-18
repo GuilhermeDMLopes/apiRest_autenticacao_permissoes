@@ -9,6 +9,8 @@ const auth = require('./authRoute.js')
 const role = require('./role.js')
 //importando rotas de permissoes
 const permissao = require('./permissaoRoute.js')
+//importar rota de seguranca
+const seguranca = require('./seguranca.js')
 
 
 module.exports = app => {
@@ -18,6 +20,7 @@ module.exports = app => {
     produto,
     usuario,
     role,
-    permissao
+    permissao,
+    seguranca
   )
 }

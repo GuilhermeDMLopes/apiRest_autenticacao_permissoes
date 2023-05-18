@@ -6,7 +6,7 @@ const { Router } = require('express')
 const router = Router()
 
 router
-    .post('/roles', RoleController.cadastrar)
+    .post('/role', RoleController.cadastrar)
     .get('/role', RoleController.buscarTodasRoles)
     .get('role/:id', RoleController.buscarRolePorId)
     .delete('/role/:id', RoleController.deletarRolePorId)
